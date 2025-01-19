@@ -1,0 +1,86 @@
+---
+import { Image } from "astro:assets";
+import { images } from "../constants";
+
+---
+<footer class="bg-gray-100 text-gray-600 pt-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Logo and Social Media -->
+        <div class="ml-3">
+          <h2 class="text-lg font-bold text-gray-800">SuperMetrics.com</h2>
+          <div class="flex items-center justify-start space-x-4 mt-4 text-[#838E9E]">
+            <!-- Social Media Icons -->
+            <a href="/" aria-label="X" title="X">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3 21l7.548-7.548M21 3l-7.548 7.548m0 0L8 3H3l7.548 10.452m2.904-2.904L21 21h-5l-5.452-7.548" color="currentColor"/></svg>
+            </a>
+            <a href="/" aria-label="LinkedIn" title="Linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M1 2.838A1.84 1.84 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.84 1.84 0 0 1 21.161 23H2.838A1.84 1.84 0 0 1 1 21.161zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708zm-5.5 10.403h3.208V9.25H4.208zM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0" clip-rule="evenodd"/></svg>
+            </a>
+            <a href="/" aria-label="Instagram" title="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M7.03.084c-1.277.06-2.149.264-2.91.563a5.9 5.9 0 0 0-2.124 1.388a5.9 5.9 0 0 0-1.38 2.127C.321 4.926.12 5.8.064 7.076s-.069 1.688-.063 4.947s.021 3.667.083 4.947c.061 1.277.264 2.149.563 2.911c.308.789.72 1.457 1.388 2.123a5.9 5.9 0 0 0 2.129 1.38c.763.295 1.636.496 2.913.552c1.278.056 1.689.069 4.947.063s3.668-.021 4.947-.082c1.28-.06 2.147-.265 2.91-.563a5.9 5.9 0 0 0 2.123-1.388a5.9 5.9 0 0 0 1.38-2.129c.295-.763.496-1.636.551-2.912c.056-1.28.07-1.69.063-4.948c-.006-3.258-.02-3.667-.081-4.947c-.06-1.28-.264-2.148-.564-2.911a5.9 5.9 0 0 0-1.387-2.123a5.9 5.9 0 0 0-2.128-1.38c-.764-.294-1.636-.496-2.914-.55C15.647.009 15.236-.006 11.977 0S8.31.021 7.03.084m.14 21.693c-1.17-.05-1.805-.245-2.228-.408a3.7 3.7 0 0 1-1.382-.895a3.7 3.7 0 0 1-.9-1.378c-.165-.423-.363-1.058-.417-2.228c-.06-1.264-.072-1.644-.08-4.848c-.006-3.204.006-3.583.061-4.848c.05-1.169.246-1.805.408-2.228c.216-.561.477-.96.895-1.382a3.7 3.7 0 0 1 1.379-.9c.423-.165 1.057-.361 2.227-.417c1.265-.06 1.644-.072 4.848-.08c3.203-.006 3.583.006 4.85.062c1.168.05 1.804.244 2.227.408c.56.216.96.475 1.382.895s.681.817.9 1.378c.165.422.362 1.056.417 2.227c.06 1.265.074 1.645.08 4.848c.005 3.203-.006 3.583-.061 4.848c-.051 1.17-.245 1.805-.408 2.23c-.216.56-.477.96-.896 1.38a3.7 3.7 0 0 1-1.378.9c-.422.165-1.058.362-2.226.418c-1.266.06-1.645.072-4.85.079s-3.582-.006-4.848-.06m9.783-16.192a1.44 1.44 0 1 0 1.437-1.442a1.44 1.44 0 0 0-1.437 1.442M5.839 12.012a6.161 6.161 0 1 0 12.323-.024a6.162 6.162 0 0 0-12.323.024M8 12.008A4 4 0 1 1 12.008 16A4 4 0 0 1 8 12.008"/></svg>
+            </a>
+            <a href="/" aria-label="Facebook" title="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Products -->
+        <div>
+          <h3 class="font-semibold text-[#838E9E] font-['Geist_Mono']">PRODUCTS</h3>
+          <hr class="border-t-2 border-gray-300 border-dashed w-[80%] my-4"/>
+
+          <ul class="mt-4 space-y-2">
+            <li><a href="/" class="hover:text-[#1B91F0]">Integrations</a></li>
+            <li><a href="/" class="hover:text-[#1B91F0]">Analytics</a></li>
+            <li><a href="/" class="hover:text-[#1B91F0]">Workspace</a></li>
+            <li><a href="/" class="hover:text-[#1B91F0]">Embed Charts</a></li>
+            <li><a href="/" class="hover:text-[#1B91F0]">DataStudio</a></li>
+            <li><a href="/" class="hover:text-[#1B91F0]">Google add-on</a></li>
+            <li><a href="/" class="hover:text-[#1B91F0]">Pricing</a></li>
+          </ul>
+        </div>
+  
+        <!-- Resources -->
+        <div>
+          <h3 class="font-semibold text-[#838E9E] font-['Geist_Mono']">RESOURCES</h3>
+          <hr class="border-t-2 border-gray-300 border-dashed w-[80%] my-4"/>
+
+          <ul class="mt-4 space-y-2">
+            <li><a href="/" class="hover:text-[#1B91F0]">Blog</a></li>
+            <li><a href="/" class="hover:text-[#1B91F0]">Changelog</a></li>
+            <li><a href="/" class="hover:text-[#1B91F0]">Affiliate Program</a></li>
+            <li><a href="/" class="hover:text-[#1B91F0]">Knowledge base</a></li>
+            <li><a href="/" class="hover:text-[#1B91F0]">Contact us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Legal -->
+        <div>
+          <h3 class="font-semibold text-[#838E9E] font-['Geist_Mono']">LEGAL</h3>
+          <hr class="border-t-2 border-gray-300 border-dashed w-[80%] my-4"/>
+          <ul class="mt-4 space-y-2 mb-4">
+            <li><a href="/" class="hover:text-[#1B91F0]">Privacy policy</a></li>
+            <li><a href="/" class="hover:text-[#1B91F0]">Terms & Conditions</a></li>
+          </ul>
+          <hr class="border-t-2 border-gray-300 border-dashed w-[80%] my-8"/>
+          <div class="mt-4">
+            <a href="/" class="flex items-center justify-between bg-white p-2 w-44 text-[#036AC6] rounded-md border border-gray-200 hover:bg-slate-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 128 128"><path fill="#fff" d="M44.59 4.21a63.28 63.28 0 0 0 4.33 120.9a67.6 67.6 0 0 0 32.36.35a57.13 57.13 0 0 0 25.9-13.46a57.44 57.44 0 0 0 16-26.26a74.3 74.3 0 0 0 1.61-33.58H65.27v24.69h34.47a29.72 29.72 0 0 1-12.66 19.52a36.2 36.2 0 0 1-13.93 5.5a41.3 41.3 0 0 1-15.1 0A37.2 37.2 0 0 1 44 95.74a39.3 39.3 0 0 1-14.5-19.42a38.3 38.3 0 0 1 0-24.63a39.25 39.25 0 0 1 9.18-14.91A37.17 37.17 0 0 1 76.13 27a34.3 34.3 0 0 1 13.64 8q5.83-5.8 11.64-11.63c2-2.09 4.18-4.08 6.15-6.22A61.2 61.2 0 0 0 87.2 4.59a64 64 0 0 0-42.61-.38"/><path fill="#e33629" d="M44.59 4.21a64 64 0 0 1 42.61.37a61.2 61.2 0 0 1 20.35 12.62c-2 2.14-4.11 4.14-6.15 6.22Q95.58 29.23 89.77 35a34.3 34.3 0 0 0-13.64-8a37.17 37.17 0 0 0-37.46 9.74a39.25 39.25 0 0 0-9.18 14.91L8.76 35.6A63.53 63.53 0 0 1 44.59 4.21"/><path fill="#f8bd00" d="M3.26 51.5a63 63 0 0 1 5.5-15.9l20.73 16.09a38.3 38.3 0 0 0 0 24.63q-10.36 8-20.73 16.08a63.33 63.33 0 0 1-5.5-40.9"/><path fill="#587dbd" d="M65.27 52.15h59.52a74.3 74.3 0 0 1-1.61 33.58a57.44 57.44 0 0 1-16 26.26c-6.69-5.22-13.41-10.4-20.1-15.62a29.72 29.72 0 0 0 12.66-19.54H65.27c-.01-8.22 0-16.45 0-24.68"/><path fill="#319f43" d="M8.75 92.4q10.37-8 20.73-16.08A39.3 39.3 0 0 0 44 95.74a37.2 37.2 0 0 0 14.08 6.08a41.3 41.3 0 0 0 15.1 0a36.2 36.2 0 0 0 13.93-5.5c6.69 5.22 13.41 10.4 20.1 15.62a57.13 57.13 0 0 1-25.9 13.47a67.6 67.6 0 0 1-32.36-.35a63 63 0 0 1-23-11.59A63.7 63.7 0 0 1 8.75 92.4"/></svg>
+                Google add-on
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 14"><path fill="currentColor" fill-rule="evenodd" d="M7 2H2.5a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7a1 1 0 1 1 2 0v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 0 11.5v-9A2.5 2.5 0 0 1 2.5 0H7a1 1 0 0 1 0 2M9.538.309A.5.5 0 0 1 10 0h3.5a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-.854.354L12.104 3.31L7.707 7.707a1 1 0 0 1-1.414-1.414l4.396-4.397L9.646.854a.5.5 0 0 1-.108-.545" clip-rule="evenodd"/></svg>            </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="border my-8" />
+      <!-- Footer Bottom -->
+      <div class="text-center flex-col items-center flex pt-6">
+        <p class="text-sm mb-16 text-[#838E9E]">Copyright 2024 © SuperMetrics.com</p>
+        <Image src={images.superMetricsLogoFooter} alt="SuperMetrics">
+      </div>
+    </div>
+  </footer>
+  
+

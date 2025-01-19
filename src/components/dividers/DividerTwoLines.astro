@@ -1,0 +1,30 @@
+<section class="h-[190px] w-full flex items-center justify-center">
+    <div class="relative flex w-full justify-center gap-16">
+        <hr class="circle-earlier border-t-1 border-gray-300 w-[360px]" />
+        <hr class="circle-later border-t-1 border-gray-300 w-[360px]" />
+    </div>
+</section>
+
+<style>
+    .circle-earlier:before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+    .circle-later:after {
+        content: "";
+        position: absolute;
+        top: -6px;
+        right: 365px;
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+</style>

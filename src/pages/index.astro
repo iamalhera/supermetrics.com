@@ -1,0 +1,26 @@
+---
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
+import InfoBanner from '../components/InfoBanner.astro';
+import Pricing from '../components/Pricing.jsx';
+import FAQs from '../components/FAQs.jsx';
+import Testimonials from '../components/Testimonials.jsx';
+import WorkflowExplainer from '../components/WorkflowExplainer.astro';
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+import DividerTwoLines from '../components/dividers/DividerTwoLines.astro';
+import DividerTwoLinesWithIcons from '../components/dividers/DividerTwoLinesWithIcons.astro';
+---
+
+<Layout>
+	<HeroSection />
+	<WorkflowExplainer />
+	<DividerTwoLines />
+	<Pricing client:load />
+	<DividerTwoLinesWithIcons /> 
+	<Testimonials client:load/>
+	<DividerTwoLines />
+	<FAQs client:load />
+	<InfoBanner />
+	<Footer />
+</Layout>

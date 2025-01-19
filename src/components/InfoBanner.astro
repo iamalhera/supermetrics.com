@@ -1,0 +1,128 @@
+---
+import { Image } from 'astro:assets';
+import {images} from "../constants";
+---
+
+<section class="py-4 bg-gradient-to-b from-[#F5F7FA] to-white">
+  <!-- top section -->
+  <div class="flex items-center justify-center">
+    <!-- Left Side Text -->
+    <div class="max-w-lg space-y-4 ml-52">
+      <h1 class="text-4xl font-semibold text-gray-900">
+        Access all your marketing data without leaving Google Workspace
+      </h1>
+      <button
+        class="w-[32%] px-6 py-3 flex items-center justify-between bg-[#1B91F0] text-white rounded-md hover:bg-blue-700 transition-all"
+      >
+        Install Now
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 14 14"
+          ><path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M7 2H2.5a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7a1 1 0 1 1 2 0v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 0 11.5v-9A2.5 2.5 0 0 1 2.5 0H7a1 1 0 0 1 0 2M9.538.309A.5.5 0 0 1 10 0h3.5a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-.854.354L12.104 3.31L7.707 7.707a1 1 0 0 1-1.414-1.414l4.396-4.397L9.646.854a.5.5 0 0 1-.108-.545"
+            clip-rule="evenodd"></path></svg
+        >
+      </button> 
+    </div>
+
+    <!-- Right Side Image/Gradient Effect -->
+    <div class="relative w-1/2 h-full rounded-lg overflow-hidden ml-auto">
+      <Image
+        loading="lazy"
+        src={images.imageBanner}
+        alt="Workspace"
+      />
+      <!-- class="object-cover w-full h-full" -->
+    </div>
+  </div>
+
+  <!-- Capsule Buttons -->
+  <div class="flex justify-center space-x-3 my-16 text-center flex-wrap">
+    <button
+      class="px-4 py-2 text-sm text-gray-700 border border-gray-300 rounded-full hover:bg-gray-100 flex items-center justify-between"
+    >
+      <img
+        loading="lazy"
+        src="src/assets/icons/color_plate.png"
+        alt="color plate"
+        class="mr-2"
+      />
+      Add Styling
+    </button>
+    <button
+      class="px-4 py-2 text-sm text-gray-700 border border-gray-300 rounded-full hover:bg-gray-100 flex items-center justify-between"
+    >
+      <img
+        loading="lazy"
+        src="src/assets/icons/done.png"
+        alt="Sync Data"
+        class="mr-2"
+      />
+      Sync Data
+    </button>
+    <button
+      class="px-4 py-2 text-sm text-gray-700 border border-gray-300 rounded-full hover:bg-gray-100 flex items-center justify-between"
+    >
+      <img
+        loading="lazy"
+        src="src/assets/icons/malechimp.png"
+        alt="Integrations"
+      />
+      <img
+        loading="lazy"
+        src="src/assets/icons/facebook.png"
+        alt="Integrations"
+      />
+      <img
+        loading="lazy"
+        src="src/assets/icons/signal.png"
+        alt="Integrations"
+        class="mr-2"
+      />
+      Integrations
+    </button>
+    <button
+      class="px-4 py-2 text-sm text-gray-700 border border-gray-300 rounded-full hover:bg-gray-100 flex items-center justify-between"
+    >
+      <img
+        loading="lazy"
+        src="src/assets/icons/google.png"
+        alt="google"
+        class="mr-2"
+      />
+      Google add-on
+    </button>
+    <button
+      class="px-4 py-2 text-sm text-gray-700 border border-gray-300 rounded-full hover:bg-gray-100 flex items-center justify-between"
+    >
+      <img
+        loading="lazy"
+        src="src/assets/icons/report.png"
+        alt="Report"
+        class="mr-2"
+      />
+      Report
+    </button>
+    <button
+      class="px-4 py-2 text-sm text-gray-700 border border-gray-300 rounded-full hover:bg-gray-100 flex items-center justify-between"
+    >
+      <img
+        loading="lazy"
+        src="src/assets/icons/analytic.png"
+        alt="Analytics"
+        class="mr-2"
+      />
+      Analytics
+    </button>
+  </div>
+</section>
+
+<style>
+  .bg-gradient-to-r {
+    background: linear-gradient(to right, #e0f7fa, #b3e5fc);
+  }
+</style>
