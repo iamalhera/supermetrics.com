@@ -28,12 +28,16 @@ import google from "../assets/icons/google.png";
 import report from "../assets/icons/report.png";
 import analytic from "../assets/icons/analytic.png";
 import growth from "../assets/icons/growth.png";
+import connectorOne from "../assets/images/workflow_images/connector_line_1.svg";
+import connectorTwo from "../assets/images/workflow_images/connector_line_2.svg";
 // import heartIcon from "../assets/icons/icon_heart.png";
 // import rocketIcon from "../assets/icons/icon_rocket.png";
 // import handbagIcon from "../assets/icons/icon_handbag.png";
 // import teamIcon from "../assets/icons/icon_team.png";
 
 export default {
+    connectorOne,
+    connectorTwo,
     // heartIcon,
     // rocketIcon,
     // handbagIcon,
