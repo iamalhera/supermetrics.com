@@ -1,7 +1,12 @@
+---
+import { Image } from "astro:assets";
+import { images } from "../../constants";
+---
+
 <section class="h-[190px] w-full flex items-center justify-center">
     <div class="relative flex w-full justify-center gap-4 items-center">
         <hr class="circle-earlier border-t-1 border-gray-300 w-[360px]" />
-        <img loading="lazy" src="src/assets/icons/growth.png" alt="Growth" class="">
+        <Image loading="lazy" src={images.growth} alt="Growth" class="">
         <hr class="circle-later border-t-1 border-gray-300 w-[360px]" />
     </div>
 </section>

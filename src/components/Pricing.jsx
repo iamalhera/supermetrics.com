@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import PricingCard from './PricingCard';
+// import { images } from '../constants';
 
 const Pricing = () => {
     const plans = [
         {
             title: 'Free',
             color: 'red-400',
-            image: "src/assets/icons/icon_heart.png",
+            image: "/assets/icon_heart.png",
             description: 'To grow referrals and leads of business looking',
             buttonText: 'Get Started for Free',
             features: [
@@ -21,7 +22,7 @@ const Pricing = () => {
         },
         {
             title: 'Starter',
-            image: "src/assets/icons/icon_rocket.png",
+            image: "/assets/icon_rocket.png",
             color: 'blue-400',
             description: 'To grow referrals and leads of business looking',
             buttonText: 'Get Starter',
@@ -36,7 +37,7 @@ const Pricing = () => {
         },
         {
             title: 'Professional',
-            image: "src/assets/icons/icon_handbag.png",
+            image: "/assets/icon_handbag.png",
             color: 'yellow-400',
             description: 'To grow referrals and leads of business looking',
             buttonText: 'Get Professional',
@@ -51,7 +52,7 @@ const Pricing = () => {
         },
         {
             title: 'Team',
-            image: "src/assets/icons/icon_team.png",
+            image: "/asssets/icon_team.png",
             color: 'purple-400',
             description: 'To grow referrals and leads of business looking',
             buttonText: 'Get Team',

@@ -10,6 +10,8 @@ const PricingCard = ({ plan, isYearly, isPopular, onHover }) => {
   };
 
   const price = isYearly ? (basePrice[plan.title] * 0.8).toFixed(2) : basePrice[plan.title];
+
+  // console.log(plan);
   return (
     <motion.div
       whileHover={{ y: -8 }}

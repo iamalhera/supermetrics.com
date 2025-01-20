@@ -11,7 +11,7 @@ const Testimonials = () => {
             company: "Google",
             companyUrl: "https://google.com",
             review: "SuperMetrics social analytics tool has provided great insights into social channels for our clients and has become an integral part of our content marketing strategies.",
-            image: "src/assets/images/person_1.jpeg" // Replace with actual image URL
+            image: "/assets/person_1.jpeg" // Replace with actual image URL
         },
         {
             id: 2,
@@ -20,7 +20,7 @@ const Testimonials = () => {
             company: "Microsoft",
             companyUrl: "https://microsoft.com",
             review: "The comprehensive analytics provided by SuperMetrics has transformed how we approach our social media strategy. It's been invaluable for our team.",
-            image: "src/assets/images/person_2.png" // Replace with actual image URL
+            image: "/assets/person_2.png" // Replace with actual image URL
         },
         {
             id: 3,
@@ -29,7 +29,7 @@ const Testimonials = () => {
             company: "Adobe",
             companyUrl: "https://adobe.com",
             review: "We've seen remarkable improvements in our social media performance since implementing SuperMetrics. The insights are clear and actionable.",
-            image: "src/assets/images/person_3.png" // Replace with actual image URL
+            image: "/assets/person_3.png" // Replace with actual image URL
         }
     ];
 
@@ -42,7 +42,7 @@ const Testimonials = () => {
                 {/* content div */}
                 <div className="flex flex-col items-center justify-center relative">
                     <div>
-                        <img loading="lazy" src="src/assets/images/doublequotes_faded.png" alt="DoubleQuotes Faded" />
+                        <img loading="lazy" src="/assets/doublequotes_faded.png" alt="DoubleQuotes Faded" />
                         <div className="absolute top-[60px] left-[335px] flex items-center flex-col">
                             <div className="inline-block px-2 py-2 rounded-full  text-gray-800 text-sm mb-4 font-['Geist_Mono'] bg-gradient-to-b from-[#d7d9db] to-white">
                                 <div className="inline-block px-2 py-1 rounded-full border text-gray-800 bg-white">
@@ -72,7 +72,8 @@ const Testimonials = () => {
                                     <div className="flex flex-col items-center">
                                         <motion.img
                                         loading='lazy'
-                                            src={activeTestimonial.image}
+                                            src={activeTestimonial?.image}
+                                            // src="/assets/doubleqoutes.png"
                                             alt={activeTestimonial.name}
                                             className="w-16 h-16 rounded-full mb-4 object-cover"
                                             initial={{ scale: 0.8 }}
