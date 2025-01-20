@@ -30,12 +30,18 @@ import analytic from "../assets/icons/analytic.png";
 import growth from "../assets/icons/growth.png";
 import connectorOne from "../assets/images/workflow_images/connector_line_1.svg";
 import connectorTwo from "../assets/images/workflow_images/connector_line_2.svg";
+import numberOne from "../assets/images/workflow_images/01_number.png";
+import numberTwo from "../assets/images/workflow_images/02_number.png";
+import numberThree from "../assets/images/workflow_images/03_number.png";
 // import heartIcon from "../assets/icons/icon_heart.png";
 // import rocketIcon from "../assets/icons/icon_rocket.png";
 // import handbagIcon from "../assets/icons/icon_handbag.png";
 // import teamIcon from "../assets/icons/icon_team.png";
 
 export default {
+    numberOne,
+    numberTwo,
+    numberThree,
     connectorOne,
     connectorTwo,
     // heartIcon,

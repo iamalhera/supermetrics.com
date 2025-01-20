@@ -52,7 +52,7 @@ const Pricing = () => {
         },
         {
             title: 'Team',
-            image: "/asssets/icon_team.png",
+            image: "/assets/icon_team.png",
             color: 'purple-400',
             description: 'To grow referrals and leads of business looking',
             buttonText: 'Get Team',
